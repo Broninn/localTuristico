@@ -4,16 +4,16 @@
 }
 
 :root {
-  --bg-color: #F5F4F0;
-  --border-color: #D9D9D9;
-  --primary: #1B1B1B;
+  --bg-color: #f5f4f0;
+  --border-color: #d9d9d9;
+  --primary: #1b1b1b;
   --secondary: #333333;
   --tertiary: #696969;
-  --headline: #E1624F;
-  --accent-blue: #0C51A7;
-  --accent-orange: #E95E10;
-  --accent-pink: #E5245E;
-  --accent-purple: #591B98;
+  --headline: #e1624f;
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
 }
 
 body {
@@ -44,9 +44,21 @@ h2 {
   margin-top: 2px;
 }
 
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 12px;
+  margin-bottom: 4px;
+}
+
 img {
   width: 1120px;
   border-radius: 28px;
+}
+
+span {
+  color: var(--accent-blue);
+  font-weight: bold;
 }
 
 .headline {
@@ -63,25 +75,107 @@ img {
   text-align: center;
 }
 
-#description-image {
+.img {
+  width: 1120px;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 28px;
   margin-top: 44px;
   margin-bottom: 40px;
 }
 
-#description-image img {
-  margin-bottom: 4px;
+.img-01 {
+  background-image: url("assets/img/Image_02.jpg");
+}
+
+.img-02 {
+  background-image: url("assets/img/Image_03.jpg");
+}
+
+.img-03 {
+  background-image: url("assets/img/Image_04.jpg");
+}
+
+#description-image {
+  margin-bottom: 40px;
 }
 
 #content {
   border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   padding-top: 64px;
+  padding-bottom: 40px;
 }
 
 .title-page {
   margin-top: 64px;
 }
 
-.content-list img {
-  margin-top: 48px;
-  height: 350px;
+.accent {
+  padding-left: 24px;
+}
+.accent-pink {
+  color: var(--accent-pink);
+}
+.accent-orange {
+  color: var(--accent-orange);
+}
+.accent-blue {
+  color: var(--accent-blue);
+}
+.accent-purple {
+  color: var(--accent-purple);
+}
+
+#description {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+footer {
+  margin: 48px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1140px) {
+  body {
+    margin: 16px auto;
+    padding: 16px;
+  }
+  main {
+    max-width: 600px;
+  }
+  img {
+    max-width: 600px;
+  }
+  .img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    max-width: 400px;
+  }
+  img {
+    max-width: 400px;
+  }
+  .img {
+    max-width: 400px;
+  }
 }
