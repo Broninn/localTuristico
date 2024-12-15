@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #F5F4F0;
+  --border-color: #D9D9D9;
+  --primary: #1B1B1B;
+  --secondary: #333333;
+  --tertiary: #696969;
+  --headline: #E1624F;
+  --accent-blue: #0C51A7;
+  --accent-orange: #E95E10;
+  --accent-pink: #E5245E;
+  --accent-purple: #591B98;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+
+main {
+  width: 1120px;
+  margin: auto;
+  margin-top: 88px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 2px;
+}
+
+img {
+  width: 1120px;
+  border-radius: 28px;
+}
+
+.headline {
+  color: var(--accent-orange);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--secondary);
+  text-align: center;
+}
+
+#description-image {
+  margin-top: 44px;
+  margin-bottom: 40px;
+}
+
+#description-image img {
+  margin-bottom: 4px;
+}
+
+#content {
+  border-top: 2px solid var(--border-color);
+  padding-top: 64px;
+}
+
+.title-page {
+  margin-top: 64px;
+}
+
+.content-list img {
+  margin-top: 48px;
+  height: 350px;
+}
